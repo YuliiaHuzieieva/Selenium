@@ -1,0 +1,407 @@
+{
+  "id": "831353d0-84c5-4625-9257-6274b1b1ea4e",
+  "version": "2.0",
+  "name": "Homework_Yuliia Huzieieva",
+  "url": "https://masterzoo.ua/ua",
+  "tests": [{
+    "id": "e47d2f1d-05b3-409f-ab99-1244413b2ac9",
+    "name": "Verify that the user can change the number of products in the basket ",
+    "commands": [{
+      "id": "b0ce66bb-6e1d-4563-a05a-a595c881098d",
+      "comment": "",
+      "command": "open",
+      "target": "https://masterzoo.ua/ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e8a800d-42e2-421a-8a2d-9d4d20ed6725",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Собаки",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "119e90ea-8755-4170-acf5-600898a69382",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"main\"]/div/div/div[2]/div/div/ul/li[1]/div/div/div/div/a/div[2]/div/span",
+      "targets": [
+        ["linkText=Коти", "linkText"],
+        ["css=.\\__hover .products-menu__title-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Коти')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/ua/catalog/koti/')]", "xpath:href"],
+        ["xpath=//li[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Коти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70b8996f-326b-4f9d-abec-d024a96f65d6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Сухий корм для собак усіх порід Savory 3 кг (кролик та качка)",
+      "targets": [
+        ["linkText=Сухий корм для собак усіх порід Savory 3 кг (кролик та качка)", "linkText"],
+        ["css=.catalog-grid__item:nth-child(1) .catalogCard-title > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Сухий корм для собак усіх порід Savory 3 кг (кролик та качка)')]", "xpath:link"],
+        ["xpath=//ul[@id='uidc1e36e90fa024e1f46682965b46e094a']/li/div/div/div/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/ua/sukhiy-korm-dlya-sobak-usikh-porid-savory-3-kg-krolik-ta-kachka/')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Сухий корм для собак усіх порід Savory 3 кг (кролик та качка)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec280dc4-6e9c-4c22-b764-9113904ea2ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=#j-buy-button-widget-13141 > .btn-content",
+      "targets": [
+        ["css=#j-buy-button-widget-13141 > .btn-content", "css:finder"],
+        ["xpath=//a[@id='j-buy-button-widget-13141']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Купити')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2db7dca3-8866-4c96-b4c3-006ae3863044",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon--plus > use",
+      "targets": [
+        ["css=.icon--plus > use", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bc74b4a-f683-4137-a59c-133d226cfd01",
+      "comment": "",
+      "command": "assertValue",
+      "target": "css=.counter-field",
+      "targets": [
+        ["css=.counter-field", "css:finder"],
+        ["xpath=//input[@value='2']", "xpath:attributes"],
+        ["xpath=//tr[@id='product_71a34c4e4d89e71ee5617f76d7cff54c']/td[3]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//td[3]/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "2"
+    }]
+  }, {
+    "id": "40c30f76-8c84-483e-a281-e38d3e010858",
+    "name": "Verify that the user can create the profile on the Master zoo site",
+    "commands": [{
+      "id": "8f531520-9bcc-4062-af0a-bd12f68f1aa2",
+      "comment": "",
+      "command": "open",
+      "target": "https://masterzoo.ua/ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15ada48d-5089-424a-8158-193146a3bfee",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[2]/div[2]/div/div[2]/div/div/div[3]/div[1]/div/div/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b837421-d919-4ad4-9ff4-6ede5fc5d0a8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"sign-in\"]/div/div[1]/div[1]/a[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8c8414b-96de-4d71-a2cf-2cc714f96855",
+      "comment": "",
+      "command": "type",
+      "target": "name=user[title]",
+      "targets": [
+        ["name=user[title]", "name"],
+        ["css=#signup-form .form-item:nth-child(2) > .field", "css:finder"],
+        ["xpath=//input[@name='user[title]']", "xpath:attributes"],
+        ["xpath=//form[@id='signup-form']/dl/dd/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/form/dl/dd/input", "xpath:position"]
+      ],
+      "value": "Yuliia"
+    }, {
+      "id": "7f22f9de-9c21-4d31-8893-f7262d73ef70",
+      "comment": "",
+      "command": "type",
+      "target": "css=#signup-form .form-item:nth-child(4) > .field",
+      "targets": [
+        ["css=#signup-form .form-item:nth-child(4) > .field", "css:finder"],
+        ["xpath=(//input[@name='user[email]'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='signup-form']/dl/dd[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/form/dl/dd[2]/input", "xpath:position"]
+      ],
+      "value": "huzieieva@ukr.net"
+    }, {
+      "id": "dacc4ba8-db72-46ea-9739-022e6c55c1df",
+      "comment": "",
+      "command": "type",
+      "target": "css=.form-item:nth-child(6) > .field",
+      "targets": [
+        ["css=.form-item:nth-child(6) > .field", "css:finder"],
+        ["xpath=(//input[@name='user[pass]'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='signup-form']/dl/dd[3]/input", "xpath:idRelative"],
+        ["xpath=//dd[3]/input", "xpath:position"]
+      ],
+      "value": "98765432"
+    }, {
+      "id": "0a5d4132-5a09-4e16-8f23-867cf9b1f5d5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"signup-form\"]/dl/dd[4]/span/input",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "80c7841e-dfd7-4e54-aa96-00be45824f88",
+    "name": "Verify that the user can find the information about the delivery on the \"Payment and delivery\" раge",
+    "commands": [{
+      "id": "1e1d9273-cfea-4a99-b5d1-00df7a4ff948",
+      "comment": "",
+      "command": "open",
+      "target": "https://masterzoo.ua/ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6533c8ca-8c89-4448-b23a-c1012a7d3fb2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[2]/div[2]/div/div[1]/div/div/div[1]/div/nav/span[2]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1def42c0-f168-4fa2-9146-6f2afef3e70b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.infopage-del",
+      "targets": [
+        ["css=.infopage-del", "css:finder"],
+        ["xpath=//main[@id='main']/div/div/div/div/section/div/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'Способи доставки')]", "xpath:innerText"]
+      ],
+      "value": "Способи доставки"
+    }, {
+      "id": "a7bedfe0-6aee-404c-a7ba-53adab9f068e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.backgleft > img",
+      "targets": [
+        ["css=.backgleft > img", "css:finder"],
+        ["xpath=//main[@id='main']/div/div/div/div/section/div/div/div/div/div/div/img", "xpath:idRelative"],
+        ["xpath=//div/div/div/img", "xpath:position"]
+      ],
+      "value": "НОВА ПОШТА"
+    }, {
+      "id": "82c989ef-02d6-4634-a73e-aaa9a2164cd2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.backgleft:nth-child(5) img",
+      "targets": [
+        ["css=.backgleft:nth-child(5) img", "css:finder"],
+        ["xpath=//main[@id='main']/div/div/div/div/section/div/div/div/div/div/div[4]/p/img", "xpath:idRelative"],
+        ["xpath=//p/img", "xpath:position"]
+      ],
+      "value": "САМОВИВІЗ"
+    }, {
+      "id": "56a0ee7b-5690-416d-ac79-ffe3fac31749",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.backgleft:nth-child(6) img",
+      "targets": [
+        ["css=.backgleft:nth-child(6) img", "css:finder"],
+        ["xpath=//main[@id='main']/div/div/div/div/section/div/div/div/div/div/div[5]/p/img", "xpath:idRelative"],
+        ["xpath=//div[5]/p/img", "xpath:position"]
+      ],
+      "value": "iPOST"
+    }, {
+      "id": "8aef40de-5521-4655-bb4f-c3c4a01ac051",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.backgleft:nth-child(7) img",
+      "targets": [
+        ["css=.backgleft:nth-child(7) img", "css:finder"],
+        ["xpath=//main[@id='main']/div/div/div/div/section/div/div/div/div/div/div[6]/p/img", "xpath:idRelative"],
+        ["xpath=//div[6]/p/img", "xpath:position"]
+      ],
+      "value": "УКРПОШТА"
+    }, {
+      "id": "e3617748-16a9-40f7-bd26-d07b7490b2a1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.infopage-pay",
+      "targets": [
+        ["css=.infopage-pay", "css:finder"],
+        ["xpath=//main[@id='main']/div/div/div/div/section/div/div/div/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div/div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Оплата замовлення')]", "xpath:innerText"]
+      ],
+      "value": "Оплата замовлення"
+    }, {
+      "id": "e8ee81d8-a483-4592-9586-245bff188cd1",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"main\"]/div/div/div/div/section/div/div/div/div/div[2]/p[8]",
+      "targets": [],
+      "value": "Кешбек"
+    }]
+  }, {
+    "id": "24a7bf14-8d52-462d-8b8f-13526ac6821d",
+    "name": "Verify that the user can find the information about the shops in Sumy City on the \"Zoomarketi-v-sumakh\" раge",
+    "commands": [{
+      "id": "14039cdd-3421-472c-a7cd-d498eded95af",
+      "comment": "",
+      "command": "open",
+      "target": "https://masterzoo.ua/ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c04715c4-1bc7-45e8-b2fb-ca31b2903130",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Контакти",
+      "targets": [
+        ["linkText=Контакти", "linkText"],
+        ["css=.site-menu__item:nth-child(7) > .site-menu__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Контакти')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/ua/kontakti/')]", "xpath:href"],
+        ["xpath=//span[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Контакти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "37ac872f-a301-4baa-a227-383c639497fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=strong",
+      "targets": [
+        ["css=strong", "css:finder"],
+        ["xpath=//main[@id='main']/div/div/div/div/section/div[2]/div/p[3]/span/a/span/strong", "xpath:idRelative"],
+        ["xpath=//strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'«Магазини»')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d66c5796-9c2e-42ee-bbda-5d836f110d0e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"7\"]/strong",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50232542-f982-4c87-98e3-2d72f57e0d4f",
+      "comment": "",
+      "command": "storeXpathCount",
+      "target": "xpath=//*[@id=\"main\"]/div/div/div/div/section/div/div",
+      "targets": [],
+      "value": "Shop adress"
+    }, {
+      "id": "84fd78cf-1a94-48db-b45f-a758b76a8bf2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "${Shop adress}",
+      "targets": [],
+      "value": "ТРЦ «Мануфактура» - Перейти на Google Карти"
+    }, {
+      "id": "bb46ab96-bccc-4911-9a84-7aa47b1b22df",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "${Shop adress}",
+      "targets": [],
+      "value": "вул. Петропавлівська, 72 - Перейти на Google Карти "
+    }, {
+      "id": "dc5d7ccc-e3a9-41d1-8547-337a1c5c82be",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "${Shop adress}",
+      "targets": [],
+      "value": "ТРЦ «Лавина» - Перейти на Google Карти "
+    }]
+  }, {
+    "id": "0bb32864-ea7a-4169-8171-3bb5e0e61041",
+    "name": "Verify that the names of grooming services are present on the \"Salon masterzoo\" page",
+    "commands": [{
+      "id": "ee9584e0-2b20-4145-b5c3-ddf6daf5858c",
+      "comment": "",
+      "command": "open",
+      "target": "https://masterzoo.ua/ua",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c3887425-a4e9-4b2c-9721-8dae1fb4d910",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Грумінг-салони",
+      "targets": [
+        ["linkText=Грумінг-салони", "linkText"],
+        ["css=.site-menu__item:nth-child(8) > .site-menu__link", "css:finder"],
+        ["xpath=//a[contains(text(),'Грумінг-салони')]", "xpath:link"],
+        ["xpath=//a[@href='http://salon.masterzoo.ua/ ']", "xpath:href"],
+        ["xpath=//span[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Грумінг-салони')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2570",
+      "windowTimeout": 2000
+    }, {
+      "id": "c552d22c-8ada-4fc6-b411-c402704eec82",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2570}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "31586a7f-1a95-437b-a82b-b889978c767c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.menu--header li:nth-child(4) > a",
+      "targets": [
+        ["css=.menu--header li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Ціна')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div/div[2]/nav/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#prices')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a03230ee-9e2b-492f-bbfb-3c0c7ad14700",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"prices\"]/div/div[2]/div[1]/div[1]",
+      "targets": [],
+      "value": "КУПАННЯ"
+    }, {
+      "id": "7b58d9ea-0958-467d-8436-7899ac9c6509",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"prices\"]/div/div[2]/div[2]/div[1]",
+      "targets": [],
+      "value": "ГІГІЄНІЧНИЙ КОМПЛЕКС"
+    }, {
+      "id": "0410bbc0-b8aa-4ed2-bb79-6b7bf1a91dea",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//*[@id=\"prices\"]/div/div[2]/div[3]/div[1]",
+      "targets": [],
+      "value": "ДОМАШНЯ СТРИЖКА"
+    }, {
+      "id": "ff045afa-a687-46e2-b110-e527a202a638",
+      "comment": "",
+      "command": "assertText",
+      "target": "//*[@id=\"prices\"]/div/div[2]/div[4]/div[1]",
+      "targets": [],
+      "value": "ПОРОДНИЙ КОМПЛЕКС"
+    }]
+  }],
+  "suites": [{
+    "id": "0a8bd39a-1d48-42be-a20f-acd055b78b04",
+    "name": "Master zoo",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["40c30f76-8c84-483e-a281-e38d3e010858", "e47d2f1d-05b3-409f-ab99-1244413b2ac9", "80c7841e-dfd7-4e54-aa96-00be45824f88", "24a7bf14-8d52-462d-8b8f-13526ac6821d", "0bb32864-ea7a-4169-8171-3bb5e0e61041"]
+  }],
+  "urls": ["https://masterzoo.ua/ua"],
+  "plugins": []
+}
